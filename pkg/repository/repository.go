@@ -1,7 +1,5 @@
 package repository
 
-import "github.com/akproger/todo-app/pkg/repository"
-
 type Authorization interface {
 }
 
@@ -17,6 +15,6 @@ type Repository struct {
 	TodoItem
 }
 
-func NewRepository(repos *repository.Repository) *Repository {
+func NewRepository() *Repository {
 	return &Repository{}
 }

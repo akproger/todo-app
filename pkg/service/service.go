@@ -1,5 +1,7 @@
 package service
 
+import "github.com/akproger/todo-app/pkg/repository"
+
 type Authorization interface {
 }
 
@@ -16,5 +18,9 @@ type Service struct {
 }
 
 func NewService() *Service {
+	return &Service{}
+}
+
+func NewRepository(repos *repository.Repository) *Service {
 	return &Service{}
 }
